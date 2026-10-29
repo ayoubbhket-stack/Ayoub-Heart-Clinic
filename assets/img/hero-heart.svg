@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#e6394f" stop-opacity=".45"/><stop offset="1" stop-color="#e6394f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5a6e"/><stop offset=".55" stop-color="#d0213a"/><stop offset="1" stop-color="#8f1022"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#ffffff" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="520" height="520" fill="url(#grid)"/>
+  <circle cx="260" cy="240" r="230" fill="url(#glow)"/>
+  <circle cx="260" cy="250" r="170" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
+  <circle cx="260" cy="250" r="210" fill="none" stroke="#fff" stroke-opacity=".05" stroke-width="2" stroke-dasharray="4 10"/>
+  <g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.045;1;1.025;1" keyTimes="0;.15;.3;.45;1" dur="1.4s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-11.7 -11.2;0 0;-6.5 -6.2;0 0" keyTimes="0;.15;.3;.45;1" dur="1.4s" repeatCount="indefinite" additive="sum"/>
+    <path d="M260 395s-118-72-150-146C86 195 117 135 175 129c33-3 61 14 85 44 24-30 52-47 85-44 58 6 89 66 65 120-32 74-150 146-150 146z" fill="url(#heart)"/>
+    <path d="M175 150c-38 4-60 40-50 76 6-30 26-52 54-58 18-4 36 0 52 10-16-20-34-30-56-28z" fill="url(#shine)"/>
+  </g>
+  <path d="M30 262h140l18-34 26 70 30-104 26 92 18-24h202" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="700" stroke-dashoffset="700">
+    <animate attributeName="stroke-dashoffset" values="700;0;0;-700" keyTimes="0;.45;.6;1" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M30 262h140l18-34 26 70 30-104 26 92 18-24h202" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" fill-opacity=".9" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700">
+    <text x="60" y="455" font-size="40">72</text>
+    <text x="118" y="455" font-size="16" fill-opacity=".55">BPM</text>
+    <text x="370" y="455" font-size="40">120/80</text>
+  </g>
+  <circle cx="44" cy="441" r="6" fill="#ff5a6e"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+</svg>
